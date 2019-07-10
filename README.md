@@ -1,12 +1,22 @@
 ## 各大手机厂商推送服务端集成
+> 统一接口 集成各大手机厂商
 ### 使用
 1. 导入idea
 2. 将lib目录下的jar 加入进项目的libraries中
 3. 在PushDemoApplicationTests.test中进行测试
 ### 入参
-表头1	表头2
-表格单元	表格单元
-表格单元	表格单元
+名称 | 必填 | 类型 |  简介   
+-|-|-|-  
+appName | M | String |  调用方app名称  
+title | M | String |  标题  
+description | M | String |  描述  
+regIdList | M | Array |  tokenList  
+pushType | M | Number |  字典项目 {1：消息通知,2：消息透传(未实现),3：消息通知打开应用,4： 消息通知打开网址}  
+manufacturerBODY | M | String |  厂商类型，可以查看ManufacturerEnum.code()  
+loadUrl | N | String |  当 pushType = 3 时，需要传入参数 loadUrl  
+url | N | String |  当 pushType = 4 时，需要传入参数 url  
+### 版本
+由于各大手机厂商 估计几个月会有一个版本 所以需根据实际情况去下载最新的包
 ### 版本
 由于各大手机厂商 估计几个月会有一个版本 所以需根据实际情况去下载最新的包
 
