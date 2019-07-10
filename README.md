@@ -15,6 +15,12 @@ pushType | M | Number |  字典项目 {1：消息通知,2：消息透传(未实�
 manufacturerBODY | M | String |  厂商类型，可以查看ManufacturerEnum.code()  
 loadUrl | N | String |  当 pushType = 3 时，需要传入参数 loadUrl  
 url | N | String |  当 pushType = 4 时，需要传入参数 url  
+### 出参
+名称 | 类型 |  简介   
+-|-|-  
+isSuccess | boolean |  是否成功 
+responseCode |  String |  响应码  
+responseMsg |  String |  响应消息
 ### 版本
 由于各大手机厂商 估计几个月会有一个版本 所以需根据实际情况去下载最新的包
 
