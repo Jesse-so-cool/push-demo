@@ -1,5 +1,5 @@
 ## 各大手机厂商推送服务端集成
-> 统一接口 集成各大手机厂商
+> 统一接口 集成各大手机厂商 包括小米、华为、oppo、vivo、魅族
 ### 使用
 1. 导入idea
 2. 将lib目录下的jar 加入进项目的libraries中
@@ -15,8 +15,6 @@ pushType | M | Number |  字典项目 {1：消息通知,2：消息透传(未实�
 manufacturerBODY | M | String |  厂商类型，可以查看ManufacturerEnum.code()  
 loadUrl | N | String |  当 pushType = 3 时，需要传入参数 loadUrl  
 url | N | String |  当 pushType = 4 时，需要传入参数 url  
-### 版本
-由于各大手机厂商 估计几个月会有一个版本 所以需根据实际情况去下载最新的包
 ### 版本
 由于各大手机厂商 估计几个月会有一个版本 所以需根据实际情况去下载最新的包
 
